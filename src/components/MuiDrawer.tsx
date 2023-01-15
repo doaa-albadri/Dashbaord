@@ -66,8 +66,8 @@ export default function ResponsiveDrawer(props: DrawerProps) {
             <Toolbar />
             <List>
                 {menuItems.map((item, index) => (
-                    <Link style={{ textDecoration: 'none', color: 'rgba(0, 0, 0, 0.54)' }} to={item.path}>
-                        <ListItem key={index} disablePadding>
+                    <Link key={index} style={{ textDecoration: 'none', color: 'rgba(0, 0, 0, 0.54)' }} to={item.path}>
+                        <ListItem disablePadding>
 
                             <ListItemButton>
                                 <ListItemIcon>
